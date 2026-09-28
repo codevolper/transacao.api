@@ -5,7 +5,7 @@ Microserviço de processamento de pagamentos que valida o limite do cliente, reg
 ## Especificação técnica
 
 - Plataforma: .NET 10 (ASP.NET Core Web API)
-- Arquitetura: API -> UseCase -> Domain -> Infrastructure (gateway HTTP) -> Repository
+- Arquitetura: API -> UseCase -> Domain -> Infrastructure -> Repository
 - Serialização: System.Text.Json
 - HTTP client: IHttpClientFactory (AddHttpClient)
 - Autenticação: Bearer JWT validado por filtro (ValidarTokenAttribute)
@@ -143,5 +143,3 @@ dotnet run --project Transacao.API/Transacao.API.csproj
 - Consulte arquivos .csproj para dependências exatas.
 
 ---
-
-Arquivo gerado automaticamente com especificação técnica e instruções básicas para desenvolvimento.
